@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>My Tech Goals</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Tech Goals for the Next 2 Years</h1>
+    </header>
+    <!-- profile Section -->
+    <section id="profile">
+      <img
+        src="assets/Slack-dp-200px.png"
+        alt="Slack Profile Picture"
+        data-testid="slackProfilePicture"
+      />
+      <p data-testid="slackDisplayName">Dollarp</p>
+      <p data-testid="slackEmail">husseindollarp@yahoo.com</p>
+    </section>
+
+    <!-- Time Section -->
+    <section id="time-container">
+      <p data-testid="currentTimeUTC">
+        Current Time (UTC): <span id="utc-time"></span>
+      </p>
+      <p data-testid="currentDay">
+        Current Day: <span id="current-day"></span>
+      </p>
+    </section>
+
+    <!-- Goals section -->
+    <section id="goals-container">
+      <h2>My Tech Goals</h2>
+      <ul>
+        <li>
+          Learn a new frontend technologies such as Vue or flutter to diversify
+          my skill set and improve problem-solving abilities.
+        </li>
+        <li>
+          Contribute to open source projects, enhancing both my coding skills
+          and community engagement.
+        </li>
+
+        <li>
+          Create and deploy a personal project to showcase my ability to manage
+          and complete a full development cycle.
+        </li>
+        <li>
+          Enhance my knowledge in front-end technologies like React, Vue.js, and
+          SASS.
+        </li>
+
+        <li>
+          Attend tech conferences and local meetups to network, learn about the
+          latest trends, and gain inspiration for new projects.
+        </li>
+        <li>Work with big Tech Companies.</li>
+        <li>
+          Develop soft skills like communication, teamwork, and project
+          management by taking courses and collaborating in diverse teams.
+        </li>
+        <li>
+          Mentor junior developers through coding bootcamps, online forums, or
+          local meetups.
+        </li>
+
+        <li>
+          Experiment with AI and IoT technologies, working on projects that
+          integrate these innovations.
+        </li>
+      </ul>
+    </section>
+
+    <!-- links section -->
+    <section id="links-container">
+      <h2>Useful Links</h2>
+      <ul>
+        <li>
+          <a href="https://hng.tech/learn" data-testid="hngLink"
+            >HNG Tech Learn</a
+          >
+        </li>
+        <li>
+          <a href="https://keyword.dog" data-testid="keywordLink"
+            >Keyword Dog</a
+          >
+        </li>
+        <li>
+          <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+            >Scrape Any Web</a
+          >
+        </li>
+      </ul>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

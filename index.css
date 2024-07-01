@@ -1,0 +1,90 @@
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background: #d9b288; */
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+}
+
+header {
+  /* background-color: #d9b288; */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  font-size: 1.5rem;
+}
+
+#profile img {
+  border-radius: 5px;
+}
+
+#time-container,
+#goals-container,
+#links-container {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+#time-container {
+  text-align: center;
+}
+
+#goals-container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+#goals-container ul {
+  list-style-type: circle;
+}
+
+#goals-container li {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+#links-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+#links-container li {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+  #profile {
+    flex-direction: column;
+    text-align: center;
+  }
+  #profile img {
+    margin-bottom: 1rem;
+  }
+}
