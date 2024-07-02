@@ -1,9 +1,11 @@
 function updateTime() {
   const now = new Date();
-  const utcTime = now.toUTCString().split(' ')[4];
-  const dayOfWeek = now.toLocaleString('en-US', { weekday: 'long' });
+  const nigeriaTime = new Date(now.getTime() + 1 * 60 * 60 * 1000);
 
-  document.getElementById('utc-time').textContent = utcTime;
+  const utcTimeString = nigeriaTime.toUTCString().split(' ')[4];
+  const dayOfWeek = nigeriaTime.toUTCString().split(',')[0];
+
+  document.getElementById('utc-time').textContent = utcTimeString;
   document.getElementById('current-day').textContent = dayOfWeek;
 }
 
