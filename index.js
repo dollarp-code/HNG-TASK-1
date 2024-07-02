@@ -3,7 +3,7 @@ function updateTime() {
   const nigeriaTime = new Date(now.getTime() + 1 * 60 * 60 * 1000);
 
   const utcTimeString = nigeriaTime.toUTCString().split(' ')[4];
-  const dayOfWeek = nigeriaTime.toUTCString().split(',')[0];
+  const dayOfWeek = nigeriaTime.toLocaleString('en-US', { weekday: 'long' });
 
   document.getElementById('utc-time').textContent = utcTimeString;
   document.getElementById('current-day').textContent = dayOfWeek;
